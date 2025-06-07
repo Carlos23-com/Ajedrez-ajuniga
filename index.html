@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajedrez con JavaScript</title>
+  <style>
+    #tablero {
+      display: grid;
+      grid-template-columns: repeat(8, 60px);
+      grid-template-rows: repeat(8, 60px);
+      border: 2px solid black;
+    }
+
+    .casilla {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    .blanca {
+      background-color: #f0d9b5;
+    }
+
+    .negra {
+      background-color: #b58863;
+    }
+
+    .seleccionada {
+      outline: 3px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Ajedrez básico con JavaScript</h2>
+  <div id="tablero"></div>
+
+  <script src="chess.js"></script>
+</body>
+</html>
+
